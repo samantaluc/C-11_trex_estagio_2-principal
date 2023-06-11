@@ -36,7 +36,7 @@ function draw() {
   console.log(trex.y)
   
   //pular quando a barra de espaço é pressionada
-  if(keyDown("space") && trex.y >= 100) {// adicionar <<<<<<<
+  if(keyWentDown("space") && trex.y >= 100) {// adicionar <<<<<<<
     trex.velocityY = -10;
   }
   
