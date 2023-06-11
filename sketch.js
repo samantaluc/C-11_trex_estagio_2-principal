@@ -24,8 +24,8 @@ function setup() {
   ground.velocityX = -4;
   
   //criando invisible ground (chão invisível)
-  invisibleGround = createSprite(200,190,400,10);
-  invisibleGround.visible = false;
+  invisibleGround = createSprite(200,190,400,10); // adicionar <<<<<<<
+  invisibleGround.visible = false;// adicionar <<<<<<<
   
 }
 
@@ -36,7 +36,7 @@ function draw() {
   console.log(trex.y)
   
   //pular quando a barra de espaço é pressionada
-  if(keyDown("space") && trex.y >= 100) {
+  if(keyDown("space") && trex.y >= 100) {// adicionar <<<<<<<
     trex.velocityY = -10;
   }
   
@@ -48,7 +48,7 @@ function draw() {
   }
   
   //impedir trex de cair
-  trex.collide(invisibleGround);
+  trex.collide(invisibleGround); // substituir <<<<<<<
   
   drawSprites();
 }
